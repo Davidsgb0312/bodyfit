@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bodyfit </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container sign-up-container">
+            <form id="signupForm">
+                <h1>Crear Cuenta</h1>
+                <input type="text" id="signupName" placeholder="Nombre" required>
+                <input type="email" id="signupEmail" placeholder="Correo Electrónico" required>
+                <input type="password" id="signupPassword" placeholder="Contraseña" required>
+                <button type="submit">Registrarse</button>
+                <p id="signupMessage"></p>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>¡Bienvenido de nuevo a bodyfit!</h1>
+                    <p>Si ya tienes una cuenta, inicia sesión para continuar.</p>
+                    <a href="login.html" class="ghost button">Iniciar Sesión</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="registro.js"></script>
+</body>
+</html>
