@@ -16,4 +16,36 @@ Este prototipo incluye **registro, inicio de sesión y un dashboard básico** do
 ---
 
 ## 📂 Estructura del proyecto
+bodyfit/
+│
+├── assets/ # Imágenes y recursos
+│ └── img/
+│
+├── css/ # Estilos
+│ ├── style.css
+│ ├── login.css
+│ ├── register.css
+│ └── dashboard.css
+│
+├── js/ # Lógica
+│ ├── auth.js # Registro y login
+│ └── dashboard.js # Dashboard y logout
+│
+├── index.html # Login
+├── register.html # Registro
+├── dashboard.html # Pantalla principal
+└── README.md
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6)**
+- **LocalStorage (para persistencia básica)**
+
+---
+
+
 
