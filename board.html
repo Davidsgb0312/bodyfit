@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bodyfit </title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>BodyFit — Board</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="content">
-            <h1>¡Bienvenido a tu Panel de Control!</h1>
-            <p> nuestra pagina esta en mantenimiento aun pero aquí podrass ver tu información, acceder a tus servicios, etc.</p>
-            <p>Esta es la página principal de tu aplicación la veras después de iniciar sesión.</p>
-            <button id="logoutButton">Cerrar Sesión</button>
-        </div>
+  <div class="board">
+    <h1>Mi Board</h1>
+
+    <div class="card">
+      <p>Aquí puedes añadir objetivos, rutinas y progreso.</p>
     </div>
-    <script src="board.js"></script>
+
+    <button onclick="window.location.href='dashboard.html'">
+      Volver al Dashboard
+    </button>
+  </div>
+
+  <script src="bord.js"></script>
 </body>
 </html>
