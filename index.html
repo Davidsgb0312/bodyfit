@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BodyFit - Transformación Total</title>
+
+    <!-- Fuente y estilos base -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: #0f0f0f;
+            color: #fff;
+        }
+
+        header {
+            background: #111;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #222;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #15d1ff;
+            text-transform: uppercase;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #eee;
+            font-weight: 500;
+            transition: .3s;
+        }
+
+        nav a:hover {
+            color: #15d1ff;
+        }
+
+        .hero {
+            height: 88vh;
+            background: url('https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            max-width: 800px;
+            line-height: 1.2;
+            text-shadow: 0 0 20px #000;
+        }
+
+        .btn {
+            margin-top: 25px;
+            padding: 15px 30px;
+            font-size: 18px;
+            background: #15d1ff;
+            color: #000;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        .btn:hover {
+            background: #0bb4db;
+        }
+
+        .section {
+            padding: 70px 40px;
+        }
+
+        .section h3 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #15d1ff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #141414;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #222;
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            border-color: #15d1ff;
+        }
+
+        footer {
+            background: #111;
+            padding: 40px;
+            text-align: center;
+            font-size: 14px;
+            border-top: 1px solid #222;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>BodyFit</h1>
+        <nav>
+            <a href="#servicios">Servicios</a>
+            <a href="#planes">Planes</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h2>Optimiza tu rendimiento físico con estrategias premium diseñadas para resultados reales.</h2>
+            <a class="btn" href="#planes">Comenzar Ahora</a>
+        </div>
+    </section>
+
+    <section class="section" id="servicios">
+        <h3>Servicios</h3>
+        <div class="cards">
+            <div class="card">
+                <h4>Entrenamiento Personalizado</h4>
+                <p>Rutinas diseñadas para maximizar tu progreso sin comprometer tu bienestar físico.</p>
+            </div>
+
+            <div class="card">
+                <h4>Acompañamiento Nutricional</h4>
+                <p>Plan de alimentación estratégico para alinear tus metas con tu metabolismo.</p>
+            </div>
+
+            <div class="card">
+                <h4>Seguimiento Premium</h4>
+                <p>Monitoreo constante vía app, con KPIs de rendimiento totalmente optimizados.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="planes">
+        <h3>Planes</h3>
+        <div class="cards">
+            <div class="card">
+                <h4>Plan Starter</h4>
+                <p>Ideal para iniciar la movida fitness con objetivos claros y alcanzables.</p>
+            </div>
+
+            <div class="card">
+                <h4>Plan Pro</h4>
+                <p>Diseñado para usuarios que buscan upgrades serios en fuerza y estética.</p>
+            </div>
+
+            <div class="card">
+                <h4>Plan Elite</h4>
+                <p>Máximo rendimiento, métricas avanzadas y soporte 24/7.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contacto">
+        <h3>Contacto</h3>
+        <p>¿Listo para entrar en modo ejecución? Escríbenos:</p>
+        <p><strong>Email:</strong> contacto@bodyfit.com</p>
+        <p><strong>WhatsApp:</strong> +57 315 000 0000</p>
+    </section>
+
+    <footer>
+        © 2025 BodyFit. All rights reserved.
+    </footer>
+
+</body>
+</html>
