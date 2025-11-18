@@ -1,31 +1,14 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const signInForm = document.getElementById('signinForm');
-    const signInMessage = document.getElementById('signinMessage');
+function login() {
+  const email = document.getElementById("email").value;
+  const pass = document.getElementById("password").value;
 
-    signInForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const email = document.getElementById('signinEmail').value;
-        const password = document.getElementById('signinPassword').value;
+  const user = JSON.parse(localStorage.getItem(email));
 
-        if (email && password) {
-            signInMessage.textContent = 'Iniciando sesión...';
-            signInMessage.style.color = 'blue';
+  if (!user || user.password !== pass) {
+    alert("Credenciales no válidas");
+    return;
+  }
 
-            setTimeout(() => {
-                
-                if (email === 'test@example.com' && password === 'password123') {
-                    signInMessage.textContent = '¡Inicio de sesión exitoso! Redirigiendo...';
-                    signInMessage.style.color = 'green';
-                  
-                    window.location.href = 'dashboard.html'; 
-                } else {
-                    signInMessage.textContent = 'Correo o contraseña incorrectos.';
-                    signInMessage.style.color = 'red';
-                }
-            }, 1500); 
-        } else {
-            signInMessage.textContent = 'Por favor, rellena todos los campos.';
-            signInMessage.style.color = 'red';
-        }
-    });
-});
+  localStorage.setItem("session", email);
+  window.location.href = "dashboard.html";
+}
